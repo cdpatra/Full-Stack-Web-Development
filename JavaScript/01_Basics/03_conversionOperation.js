@@ -99,3 +99,44 @@ let stringNumber = String(someNumber);
 console.log(stringNumber);          //output-> 33 (BUT IT'S A STRING)
 console.log(typeof stringNumber);   // output-> string;
 console.log();
+
+// *****************************OPERATIONS********************************
+console.log();
+console.log();
+console.log("*********************Operations**********************");
+console.log();
+let value = 3;
+let negValue = -value;
+console.log(negValue);
+console.log();
+
+// some operations
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(2 ** 3);
+console.log(2 / 3);
+console.log(2 % 3);
+
+
+
+// SOME TRICKY THINGS
+let str1 = "hello";
+let str2 = " world";
+let str3 = str1 + str2;     // '+' is used to concatenated two strings
+console.log(str3);          //output-> hello world
+console.log();
+
+console.log("1" + 2);       //output-> 12
+console.log(1 + "2");       // output-> 12
+console.log("1" + 2 + 2);   // output-> 122
+console.log(1 + 2 + "2");   // output-> 32 !!!
+
+console.log(true);       //output-> ture
+console.log(+true);      //output-> 1
+// console.log(true+);   //ERROR
+console.log("");         //output-> prints a empty character (NOTHING IS SHOWN ON TERMINAL)
+console.log(+"");        //output-> 0
+
+
+// links to study TypeConversion-> https://tc39.es/ecma262/#sec-type-conversion
