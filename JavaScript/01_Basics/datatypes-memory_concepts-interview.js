@@ -64,7 +64,7 @@ console.log(typeof scoreValue);
 console.log(typeof isLoggedIn);
 console.log(typeof outsideTemp);            //outsideTemp IS ASSIGNED WITH null BUT THE OUTPUT -> Object (IMPORTANT FOR INTERVIEWS)
 console.log(typeof id);                     //DATATYPE OF Symbol IS Symbol
-console.log(typeof bigNumber);              
+console.log(typeof bigNumber);
 console.log(typeof heros);                  //DATATYPES OF ALL NON PRIMITIVES DATATYPES RETURNED BY typeof OPERATOR IS Object BUT TECHNICALLY THEIR DATATYPE IS Function
 console.log(typeof myObj);
 console.log(typeof myFunction);             //DATATYPE OF FUNCTION RETURNED BY typeof OPERATOR IS Function BUT TECHNICALLY IT IS OBJECT FUNCTION
@@ -72,3 +72,36 @@ console.log(typeof nonExistedVariable);     //output-> THE VARIABLE IS NOT EXIST
 
 
 // link to learn more about datatypes:- https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+//+++++++++++++++++++++++++++++ Memory Concepts +++++++++++++++++++++++++++
+
+// there are two types of memories
+
+//1. Stack Memory (PRIMITIVE TYPES) -> Whenever stack memory is used, we get the copy of the variable
+//2. Heap Memory  (NON-PRIMITIVE TYPES) -> Whenever heap memory is used, we get the reference of the original variable
+
+
+//example to understand this concepts
+let myName = "ChinamDibyadyutiPatra";
+
+let anotherName = myName;     //Here, only the copy of myName is passed not the reference so any changes made in this variable 
+//will not affect the original variable i.e. myName
+anotherName = "Hello world";
+
+console.log();
+console.log(myName);
+console.log(anotherName);
+
+//let's take example of some advance datatype
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl",
+}
+
+let userTwo = userOne;      //Here, the reference of userOne is assigned to userTwo;!!!
+//SO ANY CHANGES MADE IN userTwo WILL ALSO GET REFLECTED IN userOne VARIABLE !!!
+userTwo.email = "email@changed.com";
+console.log(userOne.email);     //original object's value got changed !!!
+console.log(userTwo.email);
