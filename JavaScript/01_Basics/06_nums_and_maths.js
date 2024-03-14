@@ -32,4 +32,38 @@ console.log(`using toLocaleString() to add commans according to number system: $
 console.log(`using toLocaleString('en-IN') to add commans according to number system: ${hundreds.toLocaleString("en-IN")}`);    //output-> 10,00,000
 
 
-//++++++++++++++++++++++++++ Maths ++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ Maths +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+console.log();
+console.log(Math);
+
+// some methods of Math
+
+// abs()
+console.log(`The value of abs(-4) is: ${Math.abs(-4)}`);
+console.log();
+
+//round()
+console.log(`The value of round(4.3) is: ${Math.round(4.3)}`); //outupt-> 4
+console.log(`The value of round(4.6) is: ${Math.round(4.6)}`);  //output-> 5
+console.log();
+//ceil() and floor()
+console.log(`The ceiling value of 4.3 is: ${Math.ceil(4.3)}`);  //output-> 5
+console.log(`The floor value of 4.3 is: ${Math.floor(4.3)}`)    //output-> 4
+console.log();
+
+//min() and max()
+console.log(`The maximum value among (1,5,7,2,4) is: ${Math.max(1, 5, 7, 2, 4)}`);    //output-> 7
+console.log(`The mininum value among (1,5,7,2,4) is: ${Math.min(1, 5, 7, 2, 4)}`);    //output-> 1
+console.log();
+
+//random()
+console.log(`random() generates random values between 0-1 : ${Math.random()}`);
+console.log(`To generate random values between 0-10 we multiply it by 10 : ${Math.random() * 10}`);
+console.log(`To avoid the case of 0 we add 1 : ${(Math.random() * 10) + 1}`);
+console.log();
+// IMPORTANT FORMULA FOR RANDOM
+const min = 10;
+const max = 20;
+console.log(`Random numbers between 20-10: ${Math.floor((Math.random() * (max - min + 1) + min))}`);
+console.log();
