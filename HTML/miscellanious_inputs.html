@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Miscellanious inputs in forms</title>
+</head>
+
+<body>
+    <!-- select options -->
+    <form>
+        <select size="2" multiple>
+            <option value="audi">audi</option>
+            <option value="tata">tata</option>
+            <option value="BMW" selected>BMW</option>
+            <option value="cricket">cricket</option>
+            <option value="hockey">hockey</option>
+            <option value="batminton">batminton</option>
+        </select>
+    </form>
+    <br>
+    <form>
+        <select size="1">
+            <optgroup label="cars">
+                <option value="audi">audi</option>
+                <option value="tata">tata</option>
+                <option value="BMW">BMW</option>
+            </optgroup>
+            <optgroup label="sports">
+                <option value="cricket">cricket</option>
+                <option value="hockey">hockey</option>
+                <option value="batminton">batminton</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+
+
+        <!-- radio buttons -->
+
+        <input type="radio" value="male">Male
+        <input type="radio" value="female">Female
+        <input type="radio" value="others">Others
+        <br>
+        <!-- if name attribute is same then we can select only one options from others having same name attribute value -->
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="others">Others
+        <br>
+        <input type="radio" name="emptype" value="manager">Manager
+        <input type="radio" name="emptype" value="developer" checked>Developer
+        <br>
+
+        <!-- checkbox -->
+        <!-- even the name attribute values are same but we can select the multiple checkboxes  -->
+        <input type="checkbox" name="sports" value="cricket">cricket
+        <input type="checkbox" name="sports" value="batminton">batminton
+        <input type="checkbox" name="sports" value="hockey">hockey
+        <input type="checkbox" name="sports" value="football">football
+        <br>
+
+        <!-- datalist -->
+        <input type="text" list="search" placeholder="search here ...">
+        <datalist id="search">
+            <option value="Apple">
+            <option value="Mango">
+            <option value="Orange">
+            <option value="Car">
+        </datalist>
+        <input type="submit" value="Go">
+    </form>
+</body>
+
+</html>
