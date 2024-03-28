@@ -1,0 +1,57 @@
+table {
+  border: 1px solid black;
+
+  /* there is a property which collapse all the borders known as border-collapse */
+  border-collapse: collapse;
+
+  /* NOTE:- WE CANNOT APPLY MARGIN IN "th" AND "tr" RATHER WE CAN USE A TABLE PROPERTY CALLED AS border-spacing 
+    BUT TO USE border-spacing WE HAVE TO MAKE THE border-collapse PROPERTY TO ITS DEFAULT VALUE
+    i.e. seperated*/
+  border-collapse: separate;
+  border-spacing: 15px 25px;
+
+  /* If there is any empty cell we can make it hide by using the property empty-cells */
+  empty-cells: hide;
+}
+caption {
+  border: 1px solid black;
+
+  /* by default the caption position is on the top but we can also change it by using the property 
+    called as caption-side */
+  caption-side: bottom;
+}
+tr {
+  /* REMEMBER:-  "tr" does not take any border */
+  border: 1px solid black;
+}
+th {
+  border: 1px solid black;
+  height: 50px;
+  padding: 5px;
+}
+td {
+  border: 1px solid black;
+  height: 50px;
+  padding: 5px;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+/* Table with variable length content */
+#Table2 {
+  border-collapse: collapse;
+
+  width: 300px; /* width: 200 will limit the max width to 300px which will make to content to next line */
+
+  /* We can set the table layout by useing table-layout property */
+  table-layout: fixed; /* fixed try to make each colume as fixed size */
+  table-layout: auto; /* auto try to make the layout visually good according to itself rather than dividing column in eaqual width
+    (auto is prefered)*/
+}
+
+.thTable2 {
+  height: 25px;
+}
+.tdTable2 {
+  height: 20px;
+}
