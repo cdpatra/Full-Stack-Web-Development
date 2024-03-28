@@ -1,0 +1,28 @@
+li{
+    border: 1px solid black;
+}
+ul{
+    /* list-style-type is used to change the type of bullet point in unordered list */
+    list-style-type: disc;
+    list-style-type: none;
+    list-style-type: circle;
+    list-style-type: square;
+
+    /* Even we can add image in place of bullet point, to do this we have to use property called as 
+    list-style-image */
+    list-style-image: url("./resized-site-logo.png");
+
+    /* with the help of border on list items we can observe that the bullet points are outside the 
+    border of list item so change the position of the bullet points we use list-style-position */
+    list-style-position: outside;  /* by default outside */
+    list-style-position: inside;
+}
+ol{
+    /* list-style-type is used to change the type of bullet point in unordered list */
+    list-style-type: upper-alpha;
+    list-style-type: lower-alpha;
+    list-style-type: lower-roman;
+    list-style-type: upper-roman;
+    list-style-type: decimal;
+    list-style-type: decimal-leading-zero;
+}
