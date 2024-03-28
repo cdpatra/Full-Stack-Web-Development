@@ -1,0 +1,25 @@
+#parent {
+  border: 5px solid red;
+
+  /* examples of units in css */
+  /* width: 10cm; */
+  /* width: 150mm; */
+  /* width: 6in; */
+  /* width: 500pt; */
+  /* width: 500pc; */
+
+  width: 800px;
+  height: 50vh;
+
+  /* example of em and rem using font size */
+  font-size: 30px;
+}
+#child {
+  border: 5px solid yellowgreen;
+  width: 50%; /* now the width of child will be 50% of the parent i.e. 50% of 800px = 400px*/
+  height: 50%; /* now the height of child will be 50% of the parent (parent's height are flexible to the viewport) */
+
+  /* example of em and rem using font size */
+  font-size: 0.5em;
+  font-size: 1.5rem; /*relative to the root i.e. html tag*/
+}

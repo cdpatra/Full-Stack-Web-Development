@@ -1,0 +1,21 @@
+#eg1{
+    border: 5px solid green;
+    width: 500px;
+    background-color: yellowgreen;
+    margin: 100px;
+    padding: 10px;
+    height: 10vh;
+
+    box-shadow: 10px 15px 15px 5px gray inset;     /* x-axis, y-axis ,blur radius, spread radius, color*/
+}
+#eg2{
+    border: 5px solid green;
+    width: 500px;
+    background-color: yellowgreen;
+    margin: 100px;
+    padding: 10px;
+    height: 10vh;
+
+    box-shadow: 10px 15px 15px 5px gray, -20px -25px 15px 5px black ;
+
+}

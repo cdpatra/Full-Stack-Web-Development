@@ -1,0 +1,41 @@
+
+#image1{
+    filter: blur(10px);
+}
+#image2{
+    filter: brightness(50%); /* we have to give percentage in brightness*/
+}
+
+#image3{
+    filter:contrast(50%)  /*we have to give percentage in contract*/
+}
+
+#image4{
+    filter: drop-shadow(8px 10px 4px red);
+}
+
+#image5{
+    filter: grayscale(100%); /* used to make image black-white*/
+}
+
+#image6{
+    filter: hue-rotate(90deg); /* hue rotate takes degree as its unit*/
+}
+
+#image7{
+    filter: invert(100%);
+}
+
+#image8{
+    filter: opacity(50%);
+}
+
+#image9{
+    filter: saturate(30%);
+}
+
+#image10{
+    filter: sepia(80%);
+    /* We can apply more than one filter  */
+    filter: brightness(60%),invert(50%);
+}

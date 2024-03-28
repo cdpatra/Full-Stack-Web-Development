@@ -1,0 +1,61 @@
+#text {
+  width: 500px;
+  border: 1px solid red;
+
+  /* some properties of text */
+  color: blue;
+  text-align: left;
+  /* direction: rtl;  used in urdu type languages */
+
+  text-decoration: line-through;
+  text-decoration: overline;
+  text-decoration: underline;
+
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+
+  /* line-height:  is used to change the distance between the text; */
+  line-height: 30px;
+
+  text-indent: 40px; /* text indent is used to add space at the starting of the paragraph*/
+
+  letter-spacing: 5px;  /* letter-spacing is used to add space in between the letters*/
+
+  word-spacing: 15px;  /* wordspacing is used to add space in between the words*/
+
+  /* white-space: pre;    maintains the original formatting of the text written in the html file */
+
+  /* white-space: nowrap;   it will keep all the text in one line and do not add new line*/
+
+  word-wrap: break-word;    /* if the word lenth is larges than the container length then it will break the word into two parts and add a hiphen between them*/
+
+
+}
+
+/* shadow in text  */
+#shadow{
+    font-size: 40px;
+    text-shadow: 5px 10px 5px red;      /*horizontal vertical blur color*/
+}
+
+/* writing modes */
+#writingMode{
+    border: 3px solid brown;
+    width: 500px;
+    writing-mode: vertical-lr;
+}
+body {
+  border: 5px dotted black;
+}
+img {
+  border: 3px solid darkcyan;
+  width: 200px;
+
+  vertical-align: middle; /* used when image have to be inserted in between the text */
+}
+hr{
+    border: 5px solid aqua;
+    width: 50%;
+    border-radius: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label fieldset legends</title>
+
+</head>
+
+<body>
+    <form action="">
+        <div>
+            Text:
+            <input type="text">
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="textID">Text:</label>
+            <input type="text" id="textID">
+            <!-- by using label when user click on the name the particular input element will be selected -->
+        </div>
+        <br>
+        <!-- instead of div we can also group elements using fieldset, fieldset not only group elements but also provide encloser to the group -->
+        <fieldset>
+            <legend>Enter Your Full Name</legend>
+            <label for="firstNameID">First Name:</label>
+            <input style="margin: 1px;" type="text" id="firstNameID" placeholder="Enter your first name">
+
+            <label for="middleNameID">Middle Name:</label>
+            <input style="margin: 1px;" type="text" id="middleNameID" placeholder="Enter your middle name">
+
+            <label for="lastNameID">Last Name:</label>
+            <input style="margin: 1px;" type="text" id="lastNameID" placeholder="Enter your last name">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Enter Conatct Details</legend>
+            <label for="addressID">Address</label>
+            <br>
+            <textarea name="address" id="addressID" cols="60" rows="5" placeholder="Enter your address"></textarea>
+            <br>
+            <label for="telephoneID">Telephone Number:</label>
+            <input type="tel" id="telephoneID" placeholder="Phone no'">
+        </fieldset>
+        <br>
+        <div style="text-align: center;"><input type="submit" value="Submit Form"></div>
+    </form>
+</body>
+
+</html>

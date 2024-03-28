@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+</head>
+
+<body>
+    <!-- heading in the column -->
+    <table border="1px">
+        <tr>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <td>data 4</td>
+            <td>data 5</td>
+            <td>data 6</td>
+        </tr>
+        <tr>
+            <td>data 7</td>
+            <td>data 8</td>
+            <td>data 9</td>
+        </tr>
+        <caption>heading in the column</caption>
+    </table>
+    <br>
+    <!-- heading in row -->
+    <table border="1">
+        <tr>
+            <th>row 1</th>
+            <td>data 1</td>
+            <td>data 2</td>
+        </tr>
+        <tr>
+            <th>row 2</th>
+            <td>data 3</td>
+            <td>data 4</td>
+        </tr>
+        <tr>
+            <th>row 3</th>
+            <td>data 5</td>
+            <td>data 6</td>
+        </tr>
+        <caption>heading in row</caption>
+    </table>
+    <br>
+    <!-- more in table -->
+    <table border="1">
+        <tr>
+            <td colspan="4">column</td>
+        </tr>
+        <tr>
+            <th rowspan="3">row</th>
+            <td>
+                <img src="Logo.png" width="250" height="200" alt="Logo of soletechstop.com">
+            </td>
+            <td colspan="2">
+                <a href="https://www.soletechstop.com" target="_blank">SoleTechStop</a>
+            </td>
+        </tr>
+        <tr>
+            <td>data 3</td>
+            <td>data 4</td>
+            <td>data 5</td>
+        </tr>
+        <tr>
+            <td>data 6</td>
+            <td>data 7</td>
+            <td>data 8</td>
+        </tr>
+        <caption>more in table </caption>
+    </table>
+    <br>
+    <!-- Nested table -->
+    <table border="1">
+        <caption>nested table</caption>
+        <tr>
+            <th>column 1</th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </tr>
+        <tr>
+            <td>data 1</td>
+            <td>data 2</td>
+            <td>data 3</td>
+        </tr>
+        <tr>
+            <td>data 4</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <td>col 1</td>
+                        <td>col 2</td>
+                    </tr>
+                    <tr>
+                        <td>col 3</td>
+                        <td>col 4</td>
+                    </tr>
+                </table>
+            </td>
+            <td>data 6</td>
+        </tr>
+        <tr>
+            <td>data 7</td>
+            <td>data 8</td>
+            <td>data 9</td>
+        </tr>
+
+    </table>
+    <br><br>
+    <hr>
+    <!-- practice -->
+    <table border="1px">
+        <caption>Practice table</caption>
+        <thead>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+                <td rowspan="4">Company Founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry page</td>
+                <td>Founder Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckeberg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td colspan="3" style="text-align: center;">Total Expense:</td>
+            <td>$4600</td>
+        </tfoot>
+    </table>
+    <hr>
+    <table border="1px">
+        <caption>Practice Table</caption>
+        <thead>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Others</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="8">1</td>
+                <td rowspan="4">Kerala</td>
+                <td rowspan="2">Cochin</td>
+                <td>New street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>300</td>
+                <td>288</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Trivandrum</td>
+                <td>Guru Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>TVK Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Maharastra</td>
+                <td rowspan="2">Mumbai</td>
+                <td>Krishna Street </td>
+                <td>700</td>
+                <td>850</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Surath</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Billa Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Alaska</td>
+                <td rowspan="2">AKA Central</td>
+                <td>New Street</td>
+                <td>200</td>
+                <td>210</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Cross Street</td>
+                <td>1000</td>
+                <td>1050</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+
+    <table border="1px">
+        <caption>Practice Table </caption>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m.</td>
+                <td rowspan="2">5:00 p.m.</td>
+                <td style="text-align: center;">Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Valididty:DTD and Relax NG </td>
+            </tr>
+            <tr>
+                <td rowspan="2">Tuesday</td>
+                <td rowspan="2" colspan="2">
+                    <table border="1px">
+                        <tr>
+                            <td>8:00 a.m.</td>
+                            <td>11:00 a.m.</td>
+                        </tr>
+                        <tr>
+                            <td>11:00 p.m.</td>
+                            <td>2:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td>2:00 p.m.</td>
+                            <td>5:00 p.m.</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="text-align: center;">XPath</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">XSL Transformation</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 a.m.</td>
+                <td>12:00 p.m.</td>
+                <td style="text-align: center;">XSL Formatting Objects</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+</body>
+
+</html>

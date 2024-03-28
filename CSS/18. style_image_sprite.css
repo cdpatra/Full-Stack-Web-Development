@@ -1,0 +1,10 @@
+#sprite {
+  height: 128px;
+  background-image: url("./sprite.webp");
+  background-repeat: no-repeat;
+  background-position: 0px -288px;
+
+  /* one exception of image sprites is that they can be used only as background images it will not work in direct images */
+
+  /* image sprites is used to speed up the load time as client perform 3 way handshaking for each image request so if we create image sprite of many images then client will ask for only one image and the load time will reduce drastically */
+}

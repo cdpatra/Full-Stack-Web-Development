@@ -1,0 +1,17 @@
+#content {
+  margin: auto;
+  width: 80%;
+  padding: 50px;
+  text-align: center;
+}
+body {
+  border: 5px dotted red;
+  background-color: aliceblue;
+}
+img {
+    width: 100%;
+}
+p{
+    color: red;
+    font-size: larger;
+}

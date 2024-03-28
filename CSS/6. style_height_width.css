@@ -1,0 +1,18 @@
+body{
+    border: 5px dotted red;
+}
+
+#div1{
+    background-color: rgb(197, 236, 159);
+    font-size: large;
+
+    /* max and min property of any element */
+    max-height: 400px;
+    max-width: 700px;
+    min-height: 200px;
+    min-width: 100px;
+
+    /* height and width property of any element */
+    height: 500px;
+    width: 800px;
+}

@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;      /*remove underline*/
+}
+
+/* Link in HTML have 4 states */
+/* 1. :link */
+/* 2. :visited */
+/* 3. :hover */
+/* 4. :active */
+
+a:link{
+    color: yellowgreen;
+}
+a:visited{
+    color: aqua;
+}
+a:hover{
+    color: pink;
+}
+a:active{
+    color:brown
+}
+/* The above order is the recomended order of the states i.e. link->visited->hove->active */

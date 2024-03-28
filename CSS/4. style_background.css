@@ -1,0 +1,20 @@
+#bg {
+  background-color: rgb(175, 220, 205);
+  background-image: url("Logo.png"), url("site-logo.png");
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; if your want to repeat only in x axis */
+  /* background-repeat: repeat-y; if you want to repeat only in y axis */
+  background-position: 50px 100px;
+  background-position: 30% 20%;
+  background-position: center center, 50px,50px;
+  /* background-position: 20px 20px; you can also specify position in pixel also */
+  background-size: 50% 50%;
+  background-size: cover;
+  background-size: 500px 500px;
+  background-size: contain, 100px;
+  background-attachment: fixed;
+}
+/* CSS on body  */
+body {
+  background-color: rgb(245, 168, 26);
+}

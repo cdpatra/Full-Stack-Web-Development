@@ -1,0 +1,19 @@
+p {                         /*Element seclector*/
+  color: red;
+}
+
+#p3 {                        /*id slector*/
+  color: blue;
+}
+
+.green_text{                  /*class slector*/
+    color:green;
+}
+
+#large_font{
+    font-size: 40px;
+}
+
+.underline_text{
+    text-decoration: underline;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>forms</title>
+</head>
+
+<body>
+    <!-- This is form tag -->
+    <!-- due to label tag when you click the label text it will select the corresponding input element of the web page -->
+    <form method="" action="">
+        <!-- Different input types -->
+        <!-- Input tags do not have closing tags -->
+        <div>
+            <!-- Text: -->
+            <label for="text">Text:</label>
+            <input id="text" type="text" placeholder="Enter your name" title="Name" value="chinam dibyadyuti patra"
+                readonly disabled size="50" size="20" required>
+
+            <!-- placeholder is used to give hint user -->
+
+            <!-- whatever present in the value attribute it will be already filled in the text box -->
+
+            <!-- whatever you type in the value attribute it will be shown when user hover the mouse on the input element -->
+
+            <!-- whatever you write in the placeholder attribute it will be shown faded in the input element -->
+
+            <!-- readonly attribute will not allow user to change the value attribute's value -->
+
+            <!-- disabled attribute make the element diables i.e. faded so that no one can change it -->
+
+            <!-- size="no' of characters" it increase the size of the text upto the assigned value of the size attribute -->
+
+            <!-- maxlength attribute fix the size of the no' of input characters -->
+
+            <!-- required is the attribute which force the user to compulsory to fill the box -->
+
+            <br>
+            <label for="text2">Text2:</label>
+            <input type="text" id="text2" autofocus autocomplete="on">
+            <!-- autofocus is used to automatically focus on this textbox when refreshed -->
+
+            <!-- autocomplete attribute give suggestion of the previously submitted value by default it is on -->
+
+            <input type="text" name="first_name">
+            <input type="text" name="middle_name">
+            <input type="text" name="last_name">
+            <!-- name attribute is mainly used for backend purpose it help to diffenentiate between the various input tags -->
+
+        </div>
+
+        <div>
+            <!-- Number: -->
+            <label for="number">Number</label>
+            <input type="number" id="number" placeholder="Enter your number" step="5"  value="2" >
+
+            <!-- min/max these attributes are used mainly in date,range and number type -->
+
+            <!-- step attribute is used to decide the common difference NOTE:- if you do not decide the first number by using value attribute then step attribute decide 0 as the default value -->
+
+            <!-- value is used to initialize the value of number element, it also decide the starting point of the step attribute -->
+        </div>
+
+        <div>
+            <!-- Range: -->
+            <label for="range">Range</label>
+            <input type="range" min="100" max="1000">
+            <!-- min/max these attributes are used mainly in date,range and number type -->
+        </div>
+
+        <div>
+            <!-- Colour: -->
+            <label for="color">Color:</label>
+            <input type="color" id="color" placeholder="Choose Color">
+        </div>
+
+        <div>
+            <!-- Date: -->
+            <label for="date">Date:</label>
+            <input type="date" id="date" title="Enter date">
+            <!-- min/max these attributes are used mainly in date,range and number type -->
+        </div>
+
+        <div>
+            <!-- Email: -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="abc@example.com" title="email">
+        </div>
+
+        <div>
+            <!-- Password: -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <div>
+            <!-- Time: -->
+            <label for="time">Time</label>
+            <input type="time" id="time">
+        </div>
+
+        <div>
+            <!-- URL: -->
+            <label for="url">URL</label>
+            <input type="url" id="url" placeholder="Enter url">
+        </div>
+
+        <!-- file upload -->
+        <form enctype="multipart/form-data">
+            <div>
+                Upload File:
+                <input type="file" multiple> <!-- multiple is an attribute which allow to select multiple files -->
+            </div>
+        </form>
+
+        <div>
+            <br>
+            Submit Button:
+            <input type="submit" value="Submit">
+            <!-- value attribute is used to assign the value to the submit button -->
+            <br>
+            <input type="image" src="https://freepngimg.com/thumb/submit_button/25497-9-submit-button-photos.png"
+                width="100"><br>
+            Reset
+            <input type="reset">
+            <br>
+            <label for="button">Button</label>
+            <button id="button">Click</button>
+        </div>
+
+        <div>
+            Hidden: <!-- This is mainly used by developer not for user -->
+            <input type="hidden" value="Delhi">
+        </div>
+
+    </form>
+</body>
+
+</html>

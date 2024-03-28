@@ -1,0 +1,7 @@
+div{
+    border: 10px dotted purple  !important;
+    /* it is recommended that we should not use important in development */
+}
+div{
+    border: 3px dashed red;
+}

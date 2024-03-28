@@ -1,0 +1,33 @@
+#overflow1{
+    background-color: lightblue;
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+    overflow: visible; /*by default*/
+}
+#overflow2{
+    background-color: lightblue;
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+#overflow3{
+    background-color: lightblue;
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+
+    /* The below code will remove the x-axis scroll bar */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#overflow4{
+    background-color: lightblue;
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+}

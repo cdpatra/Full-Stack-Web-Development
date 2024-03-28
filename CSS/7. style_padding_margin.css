@@ -1,0 +1,39 @@
+body{
+  border: 10px dotted ;
+ 
+}
+.div1 {
+  border: 3px solid red;
+
+  /* padding */
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 20%;
+
+  padding: 10px 80px 30px 10px;
+/* padding cannot be negative */
+}
+
+#margin{
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 10%;
+  margin-right: 40%;
+  width: 500px;
+  padding: 20px;
+
+  margin: 12px 24px 10px 30px;
+  /* margin can be negative */
+  margin :-30px auto;
+}
+
+/* margin collapse */
+#collapse1{
+  margin-bottom: 50px;
+}
+#collapse2{
+  margin-top: 80px;
+}
+/* due to margin collapse the margin between the two div(s) is 80px not 50px+80px this only happens in top and bottom not in right and left */
