@@ -1,0 +1,17 @@
+textarea {
+  /* now since by default textarea was resizable but by setting resize: none will fix the size of the textarea and user cannot change the size of the text area */
+  resize: none;
+}
+#overflow {
+  border: 1px solid black;
+  background-color: lightgrey;
+  width: 500px;
+  height: 250px;
+
+  /* since the content is overflowing we can use the overflow property */
+  overflow: auto;   
+  resize: both;     /* both allows resizing in both axis i.e. x,y-axis*/
+  resize: horizontal;   /* it allows resizing in horizontal direction */
+
+  /* NOTE:- WE CAN RESIZE ONLY THOSE ELEMENTS WHICH ARE BLOCK ELEMENT AND ITS OVERFLOW PROPERTY SHOULD BE EITHER SCROLL OR AUTO OR HIDDEN SHOULD NOT BE VISIBLE */
+}
