@@ -1,0 +1,25 @@
+#div1{
+    background-color: blueviolet;
+    width: 600px;
+    height: 150px;
+
+}
+#div2{
+    background-color: chocolate;
+    width: 600px;
+    height: 150px;
+    padding: 50px;
+    border: 15px solid black;
+    box-sizing: content-box;    /* default property */
+}
+#div3{
+    background-color: chocolate;
+    width: 600px;
+    height: 150px;
+    padding: 50px;
+    border: 15px solid black;
+    box-sizing: border-box;
+}
+p{
+    font-size: 25px;
+}
