@@ -1,0 +1,24 @@
+/* CSS is not a programming language so interviewr might ask that is there is functions in CSS or not ?*/
+/* So the answer will be:- yes CSS has functions */
+
+#fun {
+  background-color: var(--primary-color);
+  height: 200px;
+  width: calc(100% - 300px);
+}
+
+/* There another function known as "var" i.e. varaible */
+/* Synatax to declare variable is as follows */
+:root{
+    --primary-color: teal;
+    --btn-color: blueviolet;
+    --text-color: aliceblue;
+}
+a{
+    border: 1px solid black;
+    padding: 10px 30px;
+    margin: 10px 30px;
+    background-color: var(--btn-color);
+    text-decoration: none;
+    color: var(--text-color);
+}
