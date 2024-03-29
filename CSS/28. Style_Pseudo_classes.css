@@ -1,0 +1,32 @@
+/* pseudo classes are used when data are coming dynamic and we cannot give "id" them */
+
+li:first-child {
+  color: red;
+}
+li:last-child {
+  color: blue;
+}
+li:nth-child(4) {
+  color: aqua;
+}
+
+/* We can also select even or odd positions */
+li:nth-child(even) {
+  color: violet;
+}
+li:nth-child(odd) {
+  color: blueviolet;
+}
+
+/* We can also make pattern */
+li:nth-child(3n-1) {
+  color: brown;
+}
+li:nth-last-child(2) {
+  color: chartreuse;
+}
+
+/* another pseudo class i.e. focus */
+input:focus {
+  border: 5px dotted red;
+}
