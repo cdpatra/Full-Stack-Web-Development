@@ -1,0 +1,21 @@
+p::first-letter{
+    font-size: 35px;
+    color: red;
+}
+p::first-line{
+    font-size: 35px;
+    color: aqua;
+}
+
+/* we can add content dynamically using pseudo elements */
+h1::before{
+    content: url("./resized-site-logo.png");
+}
+h1::after{
+    content: " pseudo element added after heading";
+}
+
+::selection{
+    color: lightcoral;
+    background: black;
+}
