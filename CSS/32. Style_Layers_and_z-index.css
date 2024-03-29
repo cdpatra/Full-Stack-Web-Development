@@ -1,0 +1,35 @@
+#parent {
+  padding: 20px;
+  width: 50%;
+  margin: 100px;
+  position: relative;
+}
+#one {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+  position: relative;
+  /* NOTE:- z-index IS ONLY APPLICABE FOR POSITIONED  */
+  z-index: 2;
+}
+#two {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: -50px;
+  z-index: 3;
+}
+#three {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  left: -100px;
+  z-index: 1;
+}
