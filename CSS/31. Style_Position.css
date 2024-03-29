@@ -1,0 +1,46 @@
+#parent {
+  border: 1px solid red;
+  padding: 20px;
+  width: 50%;
+  background-color: lightgrey;
+
+  position: relative;
+}
+#one {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+
+  position: relative; /* it will calculate from its original position and it will not all any 
+  element to occupy its original space */
+  top: 50px;
+  left: 50px;
+}
+#two {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+
+  position: absolute; /* it will calculate from its nearest positioned parent if it does not find any position parent then it
+  will take the "body" as it parent */
+  /* it will allow other element to occupy its space, if we do not specify top, bottom etc, then other element will occupy 
+  its position thats means the other element will lie behind it */
+  top: 50px;
+  left: 50px;
+  /* DIFFERENCE BETWEEN RELATIVE AND ABSOLUTE IS IMPORTANT FOR INTERVIEW */
+}
+body {
+  height: 200vh;
+}
+#three {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+
+  position: fixed; /* the position of element will be with respect to view port */
+  bottom: 100px;
+  right: 100px;
+}
