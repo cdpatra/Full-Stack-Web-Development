@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./30. Style_Display_and_visibility.css">
+    <title>Display and visibility</title>
+</head>
+<body>
+    <h2>Display property</h2>
+    <p>Display have mainly 4 important porperty</p>
+    <ol>
+        <li>block (default)</li>
+        <li>inline (default)</li>
+        <li>inline-block</li>
+        <li>none</li>
+    </ol>
+
+    <table style="border: 1px solid black; padding: 10px;">
+        <tr>
+            <th>Block</th>
+            <th>Inline</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>div</li>
+                    <li>p</li>
+                    <li>h1 - h6</li>
+                    <li>form  ...etc</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>a</li>
+                    <li>img</li>
+                    <li>span  ...etc</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <table style="border: 1px solid black; padding: 10px;">
+        <caption>Difference between block, inline and inline-block</caption>
+        <tr>
+            <th>block</th>
+            <th>inline</th>
+            <th>inline-block</th>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>new line</li>
+                    <li>full width</li>
+                    <li>height and width</li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                    <li>not new line</li>
+                    <li>no full width</li>
+                    <li>no hiehgt and width</li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                    <li>not new line</li>
+                    <li>no full width</li>
+                    <li><b>hiehgt and width</b></li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+    
+    <hr>
+    <h3>Examples to understand the concepts</h3>
+    <div class="display-block">
+        this is div1
+    </div>
+    <div class="display-block">
+        this is div2
+    </div>
+
+    <br>
+    <div class="display-inline">
+        this is div3
+    </div>
+    <div class="display-inline">
+        this is div4
+    </div>
+
+    <br>
+    <br>
+    <div class="display-inline-block">
+        This is div5
+    </div>
+    <div class="display-inline-block">
+        This id div6
+    </div>
+
+    <h3>display: none OR visibility: hidden 👇</h3>
+    <div id="div7">
+        This is div7
+    </div>
+</body>
+</html>

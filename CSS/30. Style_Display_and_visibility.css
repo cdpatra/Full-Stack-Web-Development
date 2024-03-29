@@ -1,0 +1,26 @@
+.display-block {
+  border: 1px solid red;
+  width: 49%;
+  height: 100px;
+  display: block;
+}
+.display-inline {
+  border: 1px solid red;
+  width: 49%;
+  height: 100px;
+  display: inline; /*even height and width of this div is defined but due to inline
+    it will not take it */
+}
+.display-inline-block {
+  border: 1px solid red;
+  width: 49%;
+  height: 100px;
+  display: inline-block;
+}
+#div7 {
+  border: 1px solid red;
+  width: 49%;
+  height: 100px;
+  display: none; /* display: none will remove the element entirely even its space is occupied by some other element */
+  visibility: hidden; /* visibility: hidden will remove the elemet but its space is not occupied by other element */
+}
