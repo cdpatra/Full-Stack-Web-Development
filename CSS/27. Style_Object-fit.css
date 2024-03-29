@@ -1,0 +1,29 @@
+body{
+    background-color: lightgray;
+}
+#img1{
+    border: 3px solid red;
+    width: 500px;
+    height: 300px;
+
+    /* due to above height and width value the image get distorted */
+    /* So we use object-fit property to fix it */
+    object-fit: contain;
+}
+#img2{
+    border: 3px solid red;
+    width: 500px;
+    height: 300px;
+    
+    /* This fills the entire container but the aspect ratio of the image get distorted */
+    object-fit: fill;
+}
+#img3{
+    border: 3px solid red;
+    width: 500px;
+    height: 300px;
+
+    /* This will maintain the aspect ratio of the image but some part of the image get cut off */
+    object-fit: cover;
+    object-position: top center;
+}
