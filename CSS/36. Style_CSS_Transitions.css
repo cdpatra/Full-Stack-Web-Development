@@ -1,0 +1,20 @@
+#div1 {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: red;
+
+  transition-property: width, background-color;
+  transition-property: all; /* shortcut to add all properties in transition */
+  transition-duration: 500ms;
+  transition-delay: 500ms;
+  transition-timing-function: ease-in-out;
+
+  /* transition: property, duration, timing-function, delay */
+  transform: width 6s, border-radius 1s;
+}
+#div1:hover {
+  border-radius: 20px;
+  width: 500px;
+  background-color: darkred;
+}
