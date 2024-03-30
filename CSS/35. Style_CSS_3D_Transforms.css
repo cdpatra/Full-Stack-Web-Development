@@ -1,0 +1,33 @@
+#btn {
+  text-align: center;
+}
+#btn a {
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 15px;
+  border-radius: 10px;
+  color: purple;
+  font-family: sans-serif;
+  box-shadow: 0px 2px 10px 1px rgb(205, 205, 205);
+  display: inline-block;
+}
+#bth a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* Example to understand 3D transformations */
+#cover {
+  border: 2px solid red;
+  height: 200px;
+  width: 200px;
+  margin: 150px;
+}
+#content {
+  height: 200px;
+  width: 200px;
+  background-color: yellowgreen;
+
+  /* in 3D transformation we first give perspective() */
+  transform: perspective(300px) rotate3d(0, 40, 0, 30deg)
+    translate3d(50px, 50px, 50px);
+}
