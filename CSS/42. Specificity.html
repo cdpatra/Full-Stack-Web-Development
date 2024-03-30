@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./42. Style_Specificity.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Specificity</title>
+</head>
+
+<body>
+    <h2>Specificity</h2>
+    <p>
+    <ul>
+        <li>Specificity tells if one element is styled by more than one rule, then which style will be applicable</li>
+        <li>More specific rule will get more value</li>
+    </ul>
+    </p>
+    <h3>General Rule</h3>
+    <p>
+    <ul>
+        <li>!important will override everything</li>
+        <li>Inline CSS can override everything except !important</li>
+        <li>External will work according to specificity</li>
+    </ul>
+    </p>
+    <h3>Specificity Rule</h3>
+    <p>
+    <ul>
+        <li>(#) id selector has highest value</li>
+        <li>(*) Universal selector has lowest value</li>
+    </ul>
+    </p>
+    <h3 style="display: inline;">Specificity Rule</h3>
+    <h3 style="color:red; display: inline;">Trick (Point System)</h3>
+    <p>
+    <ul>
+        <li>10,000 point to !important</li>
+        <li>1000 to Inline</li>
+        <li>100 to id</li>
+        <li>10 to class,attribute or pseudo-class</li>
+        <li>1 for element selector & pseudo-elements</li>
+        <li>0 to universal selector</li>
+        <b><i>and at last add all the points then compare the specificity</i></b>
+    </ul>
+    <b style="color: red;">NOTE:- If same rule written two or more times in external sheet then last rule will be
+        applicable</b>
+    </p>
+</body>
+
+</html>

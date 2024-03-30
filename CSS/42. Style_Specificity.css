@@ -1,0 +1,9 @@
+/* default settings */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: Poppins;
+}
