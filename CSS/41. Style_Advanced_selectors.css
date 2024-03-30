@@ -1,0 +1,67 @@
+/* default settings */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* practical example of each selectors */
+/* element selector */
+li {
+  color: red;
+}
+/* ID selector */
+#list2 {
+  color: green;
+}
+/* Class selector */
+.list5 {
+  color: orange;
+}
+/* pseudo class */
+a:hover {
+  color: mediumaquamarine;
+}
+/* pseudo element */
+p::first-line {
+  color: blueviolet;
+}
+/* attribute selector */
+a[href="https://www.google.com"]
+{
+  color: maroon;
+}
+/* universal selector */
+* {
+  border: 1px solid lightgray;
+}
+
+/* Combinator Selector */
+/* child at any stage (descendant combinatory) */
+div a {
+  font-size: 20px;
+}
+/* direct child (child combinatory) */
+div > a {
+  text-shadow: 1px 1px 3px gray;
+}
+/* right after sibling (adjacent combinatory) */
+div + p {
+  text-align: center;
+}
+/* all sibling (general sibling combinatory) */
+div ~ a {
+  color: darkgreen;
+}
+
+/* add selector */
+a,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: Poppins;
+}

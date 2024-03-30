@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./41. Style_Advanced_selectors.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Advance Selectors in CSS</title>
+</head>
+
+<body>
+    <h1>Selectors in CSS</h1>
+
+    <h3>1. Type Selector</h3>
+    <p>example:
+    <pre>
+        H1{
+            color:red;
+        }
+    </pre>
+    </p>
+
+    <h3>2. ID Selector</h3>
+    <p>example:
+    <pre>
+        #red-p{
+            color:red;
+        }
+    </pre>
+    </p>
+
+    <h3>3. Class Selector</h3>
+    <p>example:
+    <pre>
+        .red-p{
+            color:red;
+        }
+    </pre>
+    </p>
+
+    <h3>4. Pseudo Class and Pseudo Element</h3>
+    <p>example:
+    <pre>
+        a:hover{
+            color:red;
+        }
+        p::first-line{
+            color:red;
+        }
+    </pre>
+    </p>
+
+    <h3>5. Attribute Selector</h3>
+    <p>example:
+    <pre>
+        a[href="https://example.com"]{
+            color:red;
+        }
+    </pre>
+    </p>
+
+    <h3>6. Universal Selector</h3>
+    <p>example:
+    <pre>
+        *{
+            color:red;
+        }
+    </pre>
+    </p>
+
+    <h3>7. Combinator Selector</h3>
+    <h4>Descendant combinatory (child at any stage)</h4>
+    <p>example:
+    <pre>
+        .red-p span{
+            color:red;
+        }
+    </pre>
+    </p>
+    <h4>Child combinatory (Direct Child)</h4>
+    <p>example:
+    <pre>
+        .red-p>span{
+            color:red;
+        }
+    </pre>
+    </p>
+    <h4>Adjacent combinatory (right after sibling)</h4>
+    <p>example:
+    <pre>
+        .red-p + h1{
+            color:red;
+        }
+    </pre>
+    </p>
+    <h4>General sibling combinatory (all sibling)</h4>
+    <p>example:
+    <pre>
+        .red-p~h1{
+            color:red;
+        }
+    </pre>
+    </p>
+
+    <h3>8. Add Selector</h3>
+    <p>example:
+    <pre>
+        .red-p, h1{
+            color:red;
+        }
+    </pre>
+    </p>
+    <hr>
+    <h2>Practical example of each selectors</h2>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia itaque quia, nemo eaque necessitatibus
+            voluptas maiores ipsum, ut aspernatur distinctio sequi omnis consequatur voluptatem fuga! Inventore ducimus
+            blandieos adipisci dolorem, magnam possimus! Voluptate accusamus, delectus repellat dolorem excepturi
+            fugiat.</p>
+        <ul>
+            <li>list item 1</li>
+            <li id="list2">list item 2</li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+            <li class="list5">list item 5 <a href="https://www.google.com">Google</a></li>
+            <li class="list5">list item 6</li>
+            <li>list item 7 <a href="#">Yahoo</a></li>
+            <li>list item 8</li>
+        </ul>
+        <a href="#">child of div</a>
+    </div>
+    <p>Adjacent sibling of div</p>
+    <a href="#">Outside link</a>
+</body>
+
+</html>
