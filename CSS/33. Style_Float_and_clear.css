@@ -1,0 +1,65 @@
+#img1 {
+  float: right;
+  padding: 10px;
+}
+#img2 {
+  float: left;
+  padding: 10px;
+}
+p {
+  text-align: justify;
+}
+ul {
+  background-color: green;
+  list-style-type: none;
+  overflow: auto;
+}
+li {
+  color: white;
+  padding: 10px 15px;
+  float: left; /* when we apply float on each li element then it get overflow from its parent 
+  so we have to make overflow: auto in its parent */
+}
+
+#img3 {
+  float: right; /* in example 3 also image get overflow from the "p" tag */
+}
+#p3 {
+  border: 3px solid red;
+  overflow: auto; /* solved the problem of overflow due to float: right in img3 example */
+}
+
+/* Example to understand clear */
+#p4 {
+  border: 3px solid red;
+}
+#img4 {
+  float: right;
+}
+#img5 {
+  float: right;
+  clear: right;
+}
+
+#content {
+  width: 70%;
+  height: 200px;
+  background-color: green;
+  float: left;
+}
+#sidebar {
+  width: 30%;
+  height: 150px;
+  background-color: indianred;
+  float: left;
+}
+#footerwithoutclear {
+  background-color: aqua;
+}
+#footer {
+  background-color: yellowgreen;
+  /* now since the height of sidebar is less than than the content
+  therfore footer will adjust between the space of content and sizebar
+  so to fix this we can use clear property on footer evethough footer is not a float element */
+  clear: left;
+}
