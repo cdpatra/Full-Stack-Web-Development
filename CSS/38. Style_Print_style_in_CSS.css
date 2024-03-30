@@ -1,0 +1,32 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2,
+h3,
+p {
+  font-family: Poppins;
+}
+img {
+  padding: 10px;
+  float: left;
+}
+
+/* style screen and print separately */
+@media screen {
+  p {
+    font-size: 20px;
+  }
+}
+@media print {
+  p {
+    font-size: 30px;
+  }
+  img {
+    display: none;
+  }
+  div {
+    width: 50%;
+  }
+}
