@@ -1,0 +1,87 @@
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3,
+h2 {
+  font-family: "Poppins";
+}
+p {
+  font-family: "Poppins";
+}
+
+
+/* Example of animation */
+@keyframes changecolor{
+    from{ background-color: red;}
+    to{ background-color: yellow;}
+    /* instead of "from" and "to" we can give values in terms of percentage with respect to animation-duration time */
+    0% { background-color: red;}
+    25% { background-color: orange; }
+    50% { background-color: darkviolet; width:100%}
+    75% { background-color: pink; width: 200px}
+    100% { background-color: yellow; }
+}
+#animate{
+    background-color: red;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    animation-name: changecolor;
+    animation-duration: 5s;
+    animation-delay: 50ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+#animate2{
+    background-color: red;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    animation-name: changecolor;
+    animation-duration: 5s;
+    animation-delay: 50ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+    animation-direction: reverse;
+}
+#animate3{
+    background-color: red;
+    border-radius: 10px;
+    height: 100px;
+    width: 200px;
+    animation-name: changecolor;
+    animation-duration: 5s;
+    animation-delay: 50ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+    animation-direction: alternate;
+}
+
+@keyframes changecolor2 {
+    0% {background-color: red; border-radius: 10%;}
+    10% {background-color: green; border-radius: 10%;}
+    20% {background-color: orange; border-radius: 20%;}
+    30% {background-color: lightblue; border-radius: 30%;}
+    40% {background-color: blue; border-radius: 40%;}
+    50% {background-color: violet; border-radius: 50%;}
+    60% {background-color: magenta; border-radius: 40%;}
+    70% {background-color: maroon; border-radius: 30%;}
+    80% {background-color: yellowgreen; border-radius: 20%;}
+    90% {background-color: yellow; border-radius: 10%;}
+    100% {background-color: aqua; border-radius: 10%;}
+}
+#animate4{
+    background-color: red;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    animation-name: changecolor2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
