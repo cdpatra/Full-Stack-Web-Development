@@ -1,0 +1,84 @@
+/* default settings */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: Poppins;
+}
+
+/* without using flexbox */
+.inline-block-container {
+  background-color: indianred;
+}
+.inline-block-child {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+}
+
+/* with using flexbox */
+.flex-container {
+  background-color: indianred;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+
+  flex-flow: row wrap; /* shortcut */
+
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+
+  height: 400px;
+  align-items: stretch; /* in this proprty, flex-clild will be stretched according to its parent-container this is the default property */
+  align-items: center; /* is is similar to justify content but it act vertically */
+  align-items: flex-start;
+
+  /* it was a major problem in earlier CSS, it is very combursome task to vertically align any text with respect
+  to container but with the help of following flexbox property */
+  height: 50vh;
+  justify-content: center;
+  align-content: center;
+}
+.flex-child {
+  background-color: wheat;
+  margin: 20px;
+  padding: 20px;
+
+  width: 60px;
+  text-align: center;
+}
+
+/* flexbox property for children */
+#one {
+  order: 2;
+  flex-grow: 3; /* if there is any extra space then how much it grow */
+}
+#two {
+  order: 3;
+  flex-grow: 1;
+}
+#three {
+  order: 1;
+  flex-grow: 1;
+}
+#four{
+    flex-shrink: 1;
+    flex-basis: 300px;
+    align-self: flex-end;
+    
+}
+#five{
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+#six{
+    flex-shrink: 3;
+}

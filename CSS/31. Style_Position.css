@@ -12,7 +12,7 @@
   background-color: green;
   display: inline-block;
 
-  position: relative; /* it will calculate from its original position and it will not all any 
+  position: relative; /* it will calculate from its original position and it will not allow any 
   element to occupy its original space */
   top: 50px;
   left: 50px;
