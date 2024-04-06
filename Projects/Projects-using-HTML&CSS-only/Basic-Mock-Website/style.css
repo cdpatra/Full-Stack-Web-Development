@@ -1,0 +1,133 @@
+/* universal settings */
+
+/* universal padding and margin (to set the default values of padding and margin equal to 0)*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+/* universal font */
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* universal heading fonts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+/* universal padding */
+.uni-padding {
+  padding: 0 7%;
+}
+/* variables */
+:root {
+  --uiPink: #f76e6e;
+  --uiYellow: #fab340;
+  --uiLightTeal: #6d99a2;
+  --uiTeal: #02808f;
+  --uiDarkTeal: #124c60;
+  --uiWhite: aliceblue;
+}
+
+/* header start */
+
+/* topbar */
+#topbar {
+  background-color: var(--uiDarkTeal);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+
+#topbar p{
+  float: left;
+  color: var(--uiWhite);
+}
+/* social icons */
+#topbar #social-icons{
+  float: right;
+}
+#topbar #social-icons .fa-brands{
+  background-color: var(--uiWhite);
+  min-width: 20px;
+  text-align: center;
+  padding: 7px 5px;
+  border-radius: 50%;
+  color: var(--uiDarkTeal);
+}
+
+/* logo-bar */
+#logo-bar{
+  height: 100px;
+}
+#logo-bar img{
+  height: 100%;
+}
+
+/* menu-bar */
+#menu-bar{
+  background-color: var(--uiPink);
+  overflow: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#menu-bar ul{
+  list-style-type: none;
+}
+#menu-bar ul li{
+  float: left;
+  margin-right:  30px;
+}
+#menu-bar ul li a{
+  text-decoration: none;
+  color: var(--uiWhite);
+}
+/* header ends */
+
+/* footer starts */
+footer{
+  background-color: var(--uiLightTeal);
+  color: var(--uiWhite);
+  overflow: auto;
+}
+footer #important-link div{
+  /* display: inline-block; */
+  width: 33.33%;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+  text-align: justify;
+}
+footer #important-link div h2{
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+  margin-bottom: 15px;
+}
+/* styling the #imp-links */
+footer #important-link #imp-links{
+  padding-left: 10%;
+}
+footer #important-link #imp-links ul{
+  list-style-type: none;
+}
+footer #important-link #imp-links ul li a{
+  text-decoration: none;
+  color: var(--uiWhite);
+}
+
+/* copy-right */
+footer #copy-right{
+  clear: left;
+  background-color: var(--uiDarkTeal);
+  text-align: center;
+  padding: 10px;
+}
+/* footer ends */
