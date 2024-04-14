@@ -17,7 +17,7 @@ console.log(this); //output-> {}
 
 function one() {
   const userName = "cdpatra";
-  console.log(); //output->
+  console.log(this); //output->
   console.log(this.userName); //output-> udefined
 }
 one();
@@ -50,5 +50,5 @@ console.log(addTwo(2,3));   //output-> 5
 // when we return object implicity using arrow function
 var returnObject = () => {userName: "cdpatra"};
 console.log(returnObject());    //output-> undefined
-var returnObject = () => ({userName: "cdpatra"});   /** shoudl use parenthesis */
+var returnObject = () => ({userName: "cdpatra"});   /** should use parenthesis */
 console.log(returnObject());    //output-> { userName: 'cdpatra'}
