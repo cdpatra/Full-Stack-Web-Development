@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM learning</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- styling -->
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body{
+            font-family: "Poppins";
+        }
+        .bg-black {
+            background-color: #212121;
+            color: #ffffff;
+        }
+    </style>
 </head>
-<body>
+
+<body class="bg-black">
     <!-- DOM means Document Object Model -->
-    <div class="bg-black">
-        <h1 class="heading">DOM Learning</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-        
+    <div id="div1">
+        <h1 id="title" class="heading">DOM</h1>
+        <p>The Document Object Model (DOM) is an application programming interface (API) for manipulating HTML and XML
+            documents. (add, remove and modify parts of the document/HTML)</p>
+        <li>When a web page is loaded the browser creates a Document Object Model of the page</li>
+        <li style="color: indianred;">Note:- In this DOM tree, the document is the root node or object</li>
+        <img style="width: 100%;" src="./01_DOM.png" alt="dom-tree">
+        <h3>With the object model, Javascript gets all the power it needs to create dynamic HTML</h3>
+            <ul>
+                <li>Javascript can change all the HTML elements in the page</li>
+                <li>Javascript can change all the HTML attributes in the page</li>
+                <li>Javascript can change all the CSS styles in the page</li>
+                <li>Javascript can remove existing HTML elements and attributes</li>
+                <li>Javascript can add new HTML elements and attributes/li>
+                <li>Javascript can react to all existing HTML events in the page</li>
+                <li>Javascript can create new HTML events in the page</li>
+            </ul>
+            <ol style="color: indianred;">
+                NOTE:-
+                <li>In DOM all HTML elements are defined as objects. so it will have both property and method</li>
+                <li>The document object represent your web page.</li>
+                <li>If you want to access any element in an HTML page, you always start with accessing the document object.</li>
+            </ol>
     </div>
+    <script></script>
 </body>
+
 </html>
