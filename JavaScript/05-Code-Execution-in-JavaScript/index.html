@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Execution in JavaScript</title>
+
+    <script src="script.js" defer></script>
+    <!-- defer is used to make the browser to further execute the HTML document while the JS file's request is reponding by the server, so when we write script before body tag and used defer attribute, it makes the browser to request the JS file to the server before the HTML is loaded, and while the JS file is responding, brower can render the HTML, this makes the overall execution faster -->
+  </head>
+  <body style="font-family: cursive">
+    <h1>Code Execution in JavaScript</h1>
+
+    <!-- if we make the script tag at the end of the body then our HTMl will be rendered first by the browser and after that the request for JS file is make by the browser, which make the load time little slow -->
+  </body>
+</html>
