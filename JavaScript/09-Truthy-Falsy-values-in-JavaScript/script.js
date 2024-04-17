@@ -12,4 +12,8 @@ console.log(Boolean(0)); //output-> false
 console.log(Boolean(NaN)); //output-> false
 console.log(Boolean("")); //output-> false
 console.log(Boolean(undefined)); //output-> false
-console.log(Boolean(null)); //output->false
+console.log(Boolean(null)); //output-> false
+
+// to check whether the value is truthy or falsy we can also use !! (double exclamatory) operators
+console.log(Boolean({}));//output-> true;   HERE {} IS EMPTY OBJECT, IT IS EMPTY, YET IT IS TRUTHY VALUE
+console.log(!!{});//output-> true
