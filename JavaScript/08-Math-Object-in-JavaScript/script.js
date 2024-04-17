@@ -39,5 +39,3 @@ console.log(typeof Infinity); //output-> number
 
 console.log(0 / 0); //output-> NaN
 console.log(typeof (0 / 0)); //output-> number
-
-
