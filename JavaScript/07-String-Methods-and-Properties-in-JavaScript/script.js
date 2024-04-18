@@ -1,7 +1,11 @@
 const message = "Hello World!";
-console.log(message); //output-> Hello
+console.log(message); //output-> Hello World!
 console.log(message[0]); //output-> H
 console.log(message[5]); //output-> undefined;   IF INDEX IS OUT OF BOUND THEN IT WILL GIVE UNDEFINED
+
+/** NOTE:- we cannot change string because string is immutable
+ * console.log(message[3]="L"); //output-> IT WILL NOT CHANGE THE CHARACTER AT INDEX 3;
+ */
 
 console.log("My name is Chinam Dibyadyuti Patra"[0]); //output-> M
 
@@ -49,17 +53,11 @@ console.log(finalMessage.charCodeAt(4)); //output-> 121; ASCII CODE OF y
 console.log(finalMessage.split(" ")); //output-> ['Hi', 'my', 'name', 'is', 'Chinam', 'Dibyadyuti', 'Patra.']
 
 /** TEMPLATE LITERALS */
-const templateString =
-  `Last four digit of my account number is ` + lastFourDigits;
+const templateString = `Last four digit of my account number is ` + lastFourDigits;
 console.log(templateString); //output-> Last four digit of my account number is 7896
-const concatenatedString = `Last four digit of my account number is `.concat(
-  lastFourDigits
-);
+const concatenatedString = `Last four digit of my account number is `.concat(lastFourDigits);
 console.log(concatenatedString); //output-> Last four digit of my account number is 7896
-const realWayOfTemplateString = `Last four digit of my account number is ${lastFourDigits.padStart(
-  16,
-  "*"
-)}`;
+const realWayOfTemplateString = `Last four digit of my account number is ${lastFourDigits.padStart(16, "*")}`;
 console.log(realWayOfTemplateString); //output-> script.js:57 Last four digit of my account number is ************7896
 const bankBalance = 9878;
 const newTemplateString = `I have ₹${bankBalance} in my account`;
