@@ -69,3 +69,12 @@ console.log(myObject["cdpatra"]); //output-> Software Engineer
 // <<======< <| ACCESSING VALUES FROM OBJECT WITHIN OBJECT|> >=====>>
 console.log(myObject.address.city); //Bangalore;
 console.log(myObject["address"]["pinCode"]); //output-> 876876
+
+// <<======< <| DELETING KEY VALUE PAIR FROM OBJECT|> >=====>>
+console.log(delete myObject.cdpatra); //output-> true
+console.log(delete myObject["last-name"]); //output-> true
+
+// <<======< <| TO CHECK WHETHER THE KEY IS PRESENT IN THE OBJECT OR NOT|> >=====>>
+// by using 'in' operator we check whether the key is present in the object or not, it will check the direct property not the nested or inherited one
+console.log("mobileNumber" in myObject); //output-> false
+console.log("address" in myObject); //output-> true
