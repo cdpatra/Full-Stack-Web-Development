@@ -1,3 +1,5 @@
+// ! <<======================<< <| EXECUTION CONTEXT AND CALL STACK IN JAVASCRIPT |> >>========================>>
+
 sayHi();
 
 const username = "Matilda";
