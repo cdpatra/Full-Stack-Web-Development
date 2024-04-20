@@ -36,7 +36,18 @@ const funExpression = function () /** ANONYMOUS FUNCTION*/ {
 };
 funExpression(); //output-> This is function expression
 
-const funExp = function funName() { //* here if we write the function name then it will not be ignored by the JS engine even if we try to call the function with that name then it will give error
+const funExp = function funName() {
+  //* here if we write the function name then it will not be ignored by the JS engine even if we try to call the function with that name then it will give error
   console.log("Hello");
 };
 // funName(); // output-> ERROR
+
+// ! <|-----------||WHAT WILL HAPPEN IF WE DEFINE THE SAME FUNCTION TWO TIMES ||---------------|>
+function myFun() {
+  console.log("Hello");
+}
+function myFun() {
+  console.log("World");
+}
+myFun(); //output-> World
+// >> yes we can define function with same name but the definition which is written last will be applicable
