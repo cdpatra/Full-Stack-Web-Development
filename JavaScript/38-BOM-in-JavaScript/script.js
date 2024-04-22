@@ -1,0 +1,3 @@
+// ! <<=================<< BOM IN JAVASCRIPT >>===============>>
+// ^ BOM is not a formal name in JavaScript, there is not article for BOM in MDN but in w3schools there is an article related to BOM.
+// & The Browser Object Model (BOM) is a collection of objects that the browser creates when parsing a document, defining the document, and detailing how it should be displayed. The BOM is a fundamental component of web development that allows JavaScript to interact with the browser window, document, and other browser-specific functionalities.
