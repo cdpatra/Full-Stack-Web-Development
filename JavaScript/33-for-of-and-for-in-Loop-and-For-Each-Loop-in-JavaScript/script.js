@@ -60,9 +60,11 @@ fruits.forEach(function () {
 });
 
 // ^ to print the values of the array we have to pass any argument into the callback function
-fruits.forEach(function (fruit) {
-  console.log(fruit);
+fruits.forEach(function (fruit, index, array) {
+  //~ we can pass another parameter i.e. index and array
+  console.log(index, fruit, array);
 });
+
 // ? by using arrow function expression
 fruits.forEach((fruit) => console.log(fruit));
 
@@ -71,4 +73,9 @@ function myFun(ele) {
   console.log(ele);
 }
 fruits.forEach(myFun);
+
 // & forEach function does not return any thing even though you try to return via callback function the return value of forEach will be undefined
+const resultOfForEach = fruits.forEach((fruit) => {
+  return fruit;
+});
+console.log(resultOfForEach); //output-> undefined
