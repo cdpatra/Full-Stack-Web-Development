@@ -1,5 +1,5 @@
-/* CSS is not a programming language so interviewr might ask that is there is functions in CSS or not ?*/
-/* So the answer will be:- yes CSS has functions */
+/*! CSS is not a programming language so interviewer might ask that is there is functions in CSS or not ?*/
+/*^ So the answer will be:- yes CSS has functions */
 
 #fun {
   background-color: var(--primary-color);
@@ -7,8 +7,8 @@
   width: calc(100% - 300px);
 }
 
-/* There another function known as "var" i.e. varaible */
-/* Synatax to declare variable is as follows */
+/* There another function known as "var" i.e. variable */
+/* Syntax to declare variable is as follows */
 :root{
     --primary-color: teal;
     --btn-color: blueviolet;

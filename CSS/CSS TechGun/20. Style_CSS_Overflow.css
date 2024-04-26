@@ -23,7 +23,8 @@
     overflow-x: hidden;
     overflow-y: scroll;
 }
-
+/*& overflow auto: automatically adds scroll bar according to the change in the size of the container or content or vice-versa */
+/* *overflow: auto (is preferred) */
 #overflow4{
     background-color: lightblue;
     border: 3px solid black;

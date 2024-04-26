@@ -1,12 +1,12 @@
-p {                         /*Element seclector*/
+p {                         /*Element selector*/
   color: red;
 }
 
-#p3 {                        /*id slector*/
+#p3 {                        /*id selector/
   color: blue;
 }
 
-.green_text{                  /*class slector*/
+.green_text{                  /*class selector*/
     color:green;
 }
 
