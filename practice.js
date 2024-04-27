@@ -1,17 +1,7 @@
-function multiplyAll(arr) {
-  let product = 1;
-  // Only change code below this line
-  for (let arrIndex = 0; arrIndex < arr.length; arrIndex++) {
-    for (let eleIndex = 0; eleIndex < arr[arrIndex].length; eleIndex++) {
-      product *= arr[arrIndex][eleIndex];
-    }
-  }
-  // Only change code above this line
-  return product;
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum > endNum) return [];
+  const rangeArray = rangeOfNumbers(startNum + 1, endNum);
+  rangeArray.unshift(startNum);
+  return rangeArray;
 }
-
-multiplyAll([
-  [1, 2],
-  [3, 4],
-  [5, 6, 7],
-]);
+console.log(rangeOfNumbers(1, 5));
