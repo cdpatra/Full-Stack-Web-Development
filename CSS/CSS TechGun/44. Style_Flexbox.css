@@ -37,11 +37,11 @@ body {
   justify-content: space-between;
 
   height: 400px;
-  align-items: stretch; /* in this proprty, flex-clild will be stretched according to its parent-container this is the default property */
+  align-items: stretch; /* in this property, flex-child will be stretched according to its parent-container this is the default property */
   align-items: center; /* is is similar to justify content but it act vertically */
   align-items: flex-start;
 
-  /* it was a major problem in earlier CSS, it is very combursome task to vertically align any text with respect
+  /* it was a major problem in earlier CSS, it is very cumbersome task to vertically align any text with respect
   to container but with the help of following flexbox property */
   height: 50vh;
   justify-content: center;
@@ -69,16 +69,15 @@ body {
   order: 1;
   flex-grow: 1;
 }
-#four{
-    flex-shrink: 1;
-    flex-basis: 300px;
-    align-self: flex-end;
-    
+#four {
+  flex-shrink: 1;
+  /* flex-basis: 300px; */
+  align-self: flex-end;
 }
-#five{
-    flex-shrink: 0;
-    align-self: flex-start;
+#five {
+  flex-shrink: 0;
+  align-self: flex-start;
 }
-#six{
-    flex-shrink: 3;
+#six {
+  flex-shrink: 3;
 }

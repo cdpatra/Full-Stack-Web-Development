@@ -1,0 +1,109 @@
+/* default settings */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin-inline: 0px;
+}
+
+/* styling the container */
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling the card container */
+.card-container {
+  display: flex;
+  max-width: 920px;
+  min-height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* styling each card */
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 3rem;
+  align-items: flex-start;
+}
+.card img {
+  width: 64px;
+}
+.card h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.card p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.95em;
+  line-height: 1.8em;
+}
+.card a {
+  font-family: "Lexend Deca", sans-serif;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+}
+
+/* styling the sedan card */
+.sedan-card {
+  background-color: hsl(31, 77%, 52%);
+}
+.sedan-card a {
+  color: hsl(31, 77%, 52%);
+  margin-top: auto;
+}
+.sedan-card a:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+
+/* styling the suv's card */
+.suvs-card {
+  background-color: hsl(184, 100%, 22%);
+}
+.suvs-card a {
+  color: hsl(184, 100%, 22%);
+  margin-top: auto;
+}
+.suvs-card a:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+
+/* styling the luxury card */
+.luxury-card {
+  background-color: hsl(179, 100%, 13%);
+}
+.luxury-card a {
+  color: hsl(179, 100%, 13%);
+  margin-top: auto;
+}
+.luxury-card a:hover {
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* media query */
+@media (max-width: 775px) {
+  .card-container {
+    flex-direction: column;
+  }
+  body {
+    margin: 0.5rem;
+  }
+}
