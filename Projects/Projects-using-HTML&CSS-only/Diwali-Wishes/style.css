@@ -1,0 +1,232 @@
+/*! default settings */
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*! styling the hero section */
+.hero-section {
+  min-height: 100vh;
+  background-image: url(./images/orange-backdrop-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/** styling the fringe */
+.hero-section #fringe {
+  max-width: 300px;
+}
+/** styling the message with audio player */
+.hero-section p {
+  max-width: 500px;
+  font-size: 2.5rem;
+  font-family: "Salsa", sans-serif;
+  margin-top: -100px;
+  margin-left: 250px;
+}
+.hero-section p .audio-player {
+  display: inline-block;
+  min-height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fbd8a4;
+  border-radius: 3rem;
+  margin-top: 1rem;
+}
+.hero-section p .audio-player .soulful {
+  font-size: 0.9rem;
+}
+.hero-section p audio::-webkit-media-controls-panel {
+  background-color: #fbd8a4;
+}
+/** styling the deepaks */
+.hero-section .deepaks {
+  display: flex;
+  gap: 1rem;
+}
+.hero-section .deepaks .deepak {
+  max-width: 350px;
+}
+
+/*! styling the section-2 */
+.section-2 {
+  background-color: #f99501;
+  padding-inline: 1rem;
+}
+/** styling the wishing subsection */
+.wishing {
+  text-align: center;
+}
+.wishing img {
+  max-width: 1000px;
+  width: 100%;
+}
+.wishing p {
+  font-family: "Style Script", sans-serif;
+  font-size: 5rem;
+  margin-block: 1.5rem;
+}
+/** styling horizontal divider */
+.horizontal-divider {
+  margin: auto;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.horizontal-divider .line {
+  height: 2.5px;
+  flex-basis: 350px;
+  border-radius: 50px;
+  background-color: #fbd8a4;
+}
+.horizontal-divider .circle {
+  height: 0.4rem;
+  flex-basis: 0.4rem;
+  border-radius: 50%;
+  background-color: #fbd8a4;
+  flex-shrink: 0;
+}
+/** styling little girl message */
+.little-girl-message {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.little-girl-message .message {
+  background-color: white;
+  max-width: 750px;
+  width: 90%;
+  padding: 1.5em;
+  padding-right: 2.5em;
+  font-size: 2.5rem;
+  font-family: "Salsa", sans-serif;
+  border-radius: 1rem;
+}
+.little-girl-message .message p {
+  margin-block: 1.5rem;
+}
+.little-girl-message #little-girl {
+  width: 40%;
+  max-width: 350px;
+  margin-left: -110px;
+}
+
+/* ! styling the last subsection */
+.last-subsection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.last-subsection {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.last-subsection img {
+  max-width: 1000px;
+  width: 100%;
+}
+.last-subsection #happy-diwali-wish {
+  font-family: "Salsa";
+  font-size: 1.5rem;
+}
+.last-subsection #thank-you {
+  font-family: "Style Script", sans-serif;
+  font-size: 4rem;
+}
+.last-subsection-container #credit {
+  font-family: "Salsa", sans-serif;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+/*!  responsive media settings */
+@media (max-width: 760px) {
+  /*!  styling hero section */
+  .hero-section {
+    background-size: auto;
+  }
+  .hero-section p {
+    padding: 1rem;
+    margin: auto;
+    font-size: 2rem;
+  }
+  /** styling the message and audio player */
+  .hero-section p .audio-player .soulful {
+    display: none;
+  }
+  .hero-section p .audio-player {
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  .hero-section p .audio-player #beats-bar {
+    display: none;
+  }
+  /** styling the fringe */
+  .hero-section #fringe {
+    max-width: 200px;
+    width: 100%;
+  }
+  /** styling the deepaks */
+  .hero-section .deepaks #deepak1 {
+    display: none;
+  }
+  .hero-section .deepaks {
+    justify-content: flex-end;
+  }
+  .hero-section .deepaks .deepak {
+    max-width: 300px;
+    width: 100%;
+    overflow: auto;
+  }
+
+  /*! styling section 2  */
+  /** styling the horizontal divider */
+  .horizontal-divider {
+    width: 80%;
+    gap: 0.2rem;
+  }
+  .horizontal-divider .line {
+    height: 0.8px;
+  }
+  .horizontal-divider .circle {
+    height: 3px;
+    flex-basis: 3px;
+  }
+  /** styling the wishing section */
+  .wishing p {
+    font-size: 2rem;
+  }
+  /** styling little girl message */
+  .little-girl-message {
+    margin: 0;
+  }
+  .little-girl-message .message {
+    border-radius: 10px;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+  .little-girl-message #little-girl {
+    margin-left: -60px;
+  }
+  /** styling last-subsection */
+  .last-subsection #thank-you {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 670px) and (max-width: 990px) {
+  /** styling little girl message */
+  .little-girl-message .message {
+    font-size: 2rem;
+  }
+  /** styling last subsection */
+  .last-subsection #thank-you {
+    font-size: 3rem;
+  }
+}
