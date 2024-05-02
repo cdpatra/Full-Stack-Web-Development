@@ -10,6 +10,7 @@ body {
 .hero-section {
   min-height: 100vh;
   background-image: url(./images/orange-backdrop-1.png);
+  background-color: #f99501;
   background-size: cover;
   background-repeat: no-repeat;
 }

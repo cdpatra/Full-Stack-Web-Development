@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adding Event Listeners</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-  </head>
-  <body style="font-family: cursive;">
-    <h1>Adding Event Listeners</h1>
-    <div class="container">
-      <div class="card">1</div>
-    </div>
-  </body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Adding Event Listeners</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="script.js" defer></script>
+   </head>
+   <body style="font-family: cursive">
+      <!-- !we can add inline eventListener directly on the element  -->
+      <h1 onclick="console.log(`Heading Clicked`);">Adding Event Listeners</h1>
+      <!-- >>in this inline method of event listener, JS internally creates an onclick function and inside which it calls the given input i.e. console.log('Heading Clicked') -->
+
+      <h1 ondblclick="sayHi()">Heading 2</h1>
+      <h1>Heading 3</h1>
+      <div class="container">
+         <div class="card add-card" title="Add New Card">+</div>
+      </div>
+   </body>
 </html>
