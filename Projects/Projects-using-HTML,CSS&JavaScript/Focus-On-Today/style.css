@@ -1,0 +1,228 @@
+/* ! default settings */
+* {
+   box-sizing: border-box;
+}
+body {
+   margin: 1rem;
+   font-family: "Poppins", sans-serif;
+   background-color: rgba(72, 163, 0, 0.1);
+}
+
+/* ! styling the container */
+.container {
+   display: flex;
+   flex-direction: column;
+   max-width: 660px;
+   margin: 0 auto;
+}
+/* ! styling the main heading*/
+#main-heading {
+   font-size: 4rem;
+   text-align: center;
+}
+#main-heading span[id="focus-on"] {
+   color: #48a300;
+}
+#main-heading span[id="today"] {
+   color: #61481c;
+}
+
+/* ! styling the section */
+#section {
+   background-color: #ffffff;
+   width: 100%;
+   padding: 2rem;
+   border-radius: 1rem;
+   box-shadow: 0px 0px 5px 0px #00000025;
+   overflow: auto;
+}
+#section h2 {
+   display: inline-block;
+   margin-block: 0;
+   font-size: 2rem;
+}
+
+/* ! styling the rotating sun */
+.rotating-sun {
+   display: inline-block;
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   margin-inline: 1rem;
+}
+.rotating-sun img {
+   display: inline-block;
+   position: absolute;
+}
+.rotating-sun img[id="sun-face"] {
+   top: 1.3rem;
+   left: 1.2rem;
+}
+@keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+.rotating-sun img[id="sun-disk"] {
+   animation-name: rotate;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+/* ! styling the message */
+.container section p[id="message"] {
+   color: #858585;
+}
+
+/* ! styling custom progress bar */
+.container section #custom-progress-bar {
+   height: 4.5rem;
+}
+.container section #custom-progress-bar #progress-bar {
+   background-color: rgba(72, 163, 0, 0.1);
+   height: 2rem;
+   border-radius: 1rem;
+   overflow: hidden;
+}
+/* !styling the progress */
+.container section #custom-progress-bar #progress-bar #progress {
+   background-color: #48a300;
+   height: inherit;
+   border-radius: inherit;
+   display: flex;
+   align-items: center;
+   width: 0px;
+   transition: width 0.2s ease-in-out;
+}
+/* ! styling progress count */
+.container section #custom-progress-bar #progress-bar #progress #progress-count {
+   color: white;
+   font-size: 13px;
+   margin-left: 1rem;
+   flex-shrink: 0;
+}
+/* !styling the alert section */
+.container section #alert-message {
+   color: #ff5151;
+}
+
+/* !styling the goal input field */
+.container section .goal-input-field {
+   display: flex;
+   margin-block: 3rem;
+   border: 2px solid rgba(0, 0, 0, 0.1);
+   border-radius: 1rem;
+   align-items: center;
+   padding-inline: 1.5rem;
+   padding-block: 2rem;
+   gap: 1.5rem;
+}
+.container section .goal-input-field input {
+   border: none;
+   width: 100%;
+   font-family: inherit;
+   font-size: 1rem;
+   font-weight: 500;
+}
+.container section .goal-input-field input::placeholder {
+   color: #d9d9d9;
+}
+.container section .goal-input-field input:focus {
+   outline: none;
+}
+/* !styling custom checkbox */
+.container section .goal-input-field .custom-checkbox {
+   display: inline-block;
+   width: 1.5rem;
+   height: 1.5rem;
+   border-radius: 50%;
+   border: 2px solid rgba(97, 72, 28, 0.3);
+   flex-shrink: 0;
+   cursor: pointer;
+}
+.container section .goal-input-field .marked {
+   background-color: #48a300;
+   background-image: url(./images/tick.svg);
+   background-repeat: no-repeat;
+   background-position: 0.25rem;
+}
+/* ! styling goal completed */
+.container section .goal-input-field .goal-completed {
+   color: #48a300;
+   text-decoration-line: line-through;
+}
+
+/* ! styling the motivational quote */
+.container section #quote {
+   font-size: 1.5rem;
+   text-align: center;
+   font-weight: 600;
+   padding-bottom: 3rem;
+}
+
+/* ! styling the credit */
+.container section #credit {
+   text-align: center;
+   font-size: 10px;
+   color: #858585;
+}
+/* ! responsive media queries */
+@media (max-width: 535px) {
+   #section {
+      padding-inline: 1rem;
+   }
+   #main-heading {
+      font-size: 2.5rem;
+      text-align: center;
+   }
+   #section h2 {
+      font-size: 1.5rem;
+   }
+   .rotating-sun img[id="sun-disk"] {
+      width: 80%;
+   }
+   .rotating-sun img[id="sun-face"] {
+      width: 8px;
+      top: 17px;
+      left: 16px;
+   }
+   .container section .goal-input-field {
+      padding-inline: 1rem;
+      padding-block: 1rem;
+      margin-block: 2rem;
+   }
+   .container section p[id="message"] {
+      font-size: 0.8rem;
+   }
+   .container section #alert-message {
+      font-size: 0.8rem;
+   }
+   .container section #custom-progress-bar #progress-bar {
+      height: 1.5rem;
+   }
+   .container section .goal-input-field {
+      gap: 0.5rem;
+   }
+   .container section .goal-input-field input {
+      font-size: 0.8rem;
+   }
+   .container section .goal-input-field .custom-checkbox {
+      width: 1rem;
+      height: 1rem;
+   }
+   .container section .goal-input-field .marked {
+      background-position: 0.15rem;
+      background-size: 0.5rem;
+   }
+   .container section #custom-progress-bar #progress-bar #progress #progress-count {
+      font-size: 10px;
+      margin-left: 10px;
+   }
+   .container section #quote {
+      font-size: 1rem;
+   }
+}

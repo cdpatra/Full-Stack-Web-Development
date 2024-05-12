@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Focus On Today</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css" />
+
+      <!-- script -->
+      <script src="script.js" defer></script>
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet" />
+
+      <!-- favicon -->
+      <link rel="shortcut icon" href="./images/sun-disk.svg" type="image/x-icon" />
+   </head>
+   <body>
+      <div class="container">
+         <h1 id="main-heading"><span id="focus-on">Focus on</span><span id="today">&nbsp;Today</span></h1>
+         <section id="section">
+            <h2>Today</h2>
+            <div class="rotating-sun">
+               <img src="./images/sun-disk.svg" alt="sun" id="sun-disk" />
+               <img src="./images/sun-face.svg" alt="sun" id="sun-face" />
+            </div>
+            <p id="message"></p>
+            <div id="custom-progress-bar">
+               <div id="progress-bar">
+                  <div id="progress">
+                     <p id="progress-count"><span></span>/3 Completed</p>
+                  </div>
+               </div>
+               <p id="alert-message">Please set all the 3 goals</p>
+            </div>
+            <div class="goal-input-field">
+               <div class="custom-checkbox"></div>
+               <input type="text" placeholder="Add new goal..." />
+            </div>
+            <div class="goal-input-field">
+               <div class="custom-checkbox"></div>
+               <input type="text" placeholder="Add new goal..." />
+            </div>
+            <div class="goal-input-field">
+               <div class="custom-checkbox"></div>
+               <input type="text" placeholder="Add new goal..." />
+            </div>
+            <p id="quote"></p>
+            <p id="credit">Made with ❤️ by Chinam Dibyadyuti Patra</p>
+         </section>
+      </div>
+   </body>
+</html>
