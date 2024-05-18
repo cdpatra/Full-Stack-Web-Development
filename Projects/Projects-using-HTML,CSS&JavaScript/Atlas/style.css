@@ -241,7 +241,7 @@ i[class="fa-solid fa-moon"] {
 #country-flag {
    width: 100%;
    max-width: 550px;
-   grid-row-start: span 3;
+   grid-row-start: span 4;
    margin-block: auto;
    border-radius: 5px;
 }
@@ -284,6 +284,13 @@ i[class="fa-solid fa-moon"] {
    padding-block: 0.5rem;
    border-radius: 5px;
    cursor: pointer;
+}
+#map {
+   grid-column-start: span 2;
+}
+#map-link a {
+   color: inherit;
+   margin-inline: 0.5rem;
 }
 
 /* ! responsive media queries for index.html */
@@ -335,6 +342,9 @@ i[class="fa-solid fa-moon"] {
       flex-direction: column;
       align-items: flex-start;
       gap: 0px;
+   }
+   #map {
+      grid-column-start: 1;
    }
 }
 

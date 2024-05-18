@@ -61,7 +61,6 @@ fetch(`https://restcountries.com/v3.1/name/${countryOfficialName}?fullText=true`
       const countryInfo = document.querySelector(`#country-info`);
 
       // & getting the values of native names
-      console.log(countryData);
       let nativeNames = `No Native Names`;
       if (countryData.name.nativeName) {
          const nativeNamesObjects = Object.values(countryData.name.nativeName);
@@ -141,6 +140,12 @@ fetch(`https://restcountries.com/v3.1/name/${countryOfficialName}?fullText=true`
       } catch (err) {
          borderCountriesList.innerHTML = `No Border Countries`;
       }
+      // ! setting up the country map link
+      const mapHeading = document.querySelector(`#map-link strong`);
+      mapHeading.innerText = `Map: `;
+      const mapLink = document.querySelector(`#map-link a`);
+      mapLink.href = `${countryData.maps.googleMaps}`;
+      mapLink.innerText = `Click here to see this country on Google Map`;
    });
 
 // ! implementing back button
