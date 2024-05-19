@@ -1,0 +1,17 @@
+{
+   "name": "3-transform-jsx-with-babel",
+   "version": "1.0.0",
+   "description": "",
+   "main": "babel.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "babel ./script.jsx -d lib --source-maps"
+   },
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@babel/cli": "^7.24.5",
+      "@babel/core": "^7.24.5",
+      "@babel/preset-react": "^7.24.1"
+   }
+}

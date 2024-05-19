@@ -1,0 +1,40 @@
+{
+   "version": 3,
+   "file": "script.js",
+   "names": [
+      "user",
+      "h2",
+      "React",
+      "createElement",
+      "root",
+      "ReactDOM",
+      "createRoot",
+      "document",
+      "querySelector",
+      "container",
+      "className",
+      "id",
+      "style",
+      "textAlign",
+      "src",
+      "width",
+      "borderRadius",
+      "margin",
+      "border",
+      "padding",
+      "htmlFor",
+      "console",
+      "log",
+      "render",
+      "values",
+      "undefined"
+   ],
+   "sources": [
+      "../script.jsx"
+   ],
+   "sourcesContent": [
+      "// ! <<===============<< Transform JSX with Babel >>===============>>\r\nconst user = `cdpatra`;\r\nconst h2 = <h2>Hello {user}</h2>; //& to use javascript value we have to use curly brackets\r\n\r\nconst root = ReactDOM.createRoot(document.querySelector(`#root`));\r\n// root.render(h2);\r\n\r\nconst container = (\r\n   <div className=\"container\" id=\"container\" style={{ textAlign: `center` }}>\r\n      <section className=\"section\">\r\n         <p>The library for web and native user interfaces</p>\r\n         <img src=\"https://placehold.co/500/teal/white\" style={{ width: `200px`, borderRadius: 10 }} />\r\n      </section>\r\n      <form style={{ margin: `2rem`, border: `5px solid grey`, borderRadius: `10px`, padding: `1rem` }}>\r\n         <label htmlFor=\"username\">Username </label>\r\n         <input id=\"username\" />\r\n      </form>\r\n   </div>\r\n);\r\nconsole.log(container);\r\nroot.render(container);\r\n// ! <| few javascript values that react does not show directly on web page|>\r\nconst values = (\r\n   <h2>\r\n      JavaScript values that react does not show: {undefined},{null},{true},{false}.\r\n   </h2>\r\n);\r\n// root.render(values);\r\n"
+   ],
+   "mappings": "AAAA;AACA,MAAMA,IAAI,GAAI,SAAQ;AACtB,MAAMC,EAAE,gBAAGC,KAAA,CAAAC,aAAA,aAAI,QAAM,EAACH,IAAS,CAAC,CAAC,CAAC;;AAElC,MAAMI,IAAI,GAAGC,QAAQ,CAACC,UAAU,CAACC,QAAQ,CAACC,aAAa,CAAE,OAAM,CAAC,CAAC;AACjE;;AAEA,MAAMC,SAAS,gBACZP,KAAA,CAAAC,aAAA;EAAKO,SAAS,EAAC,WAAW;EAACC,EAAE,EAAC,WAAW;EAACC,KAAK,EAAE;IAAEC,SAAS,EAAG;EAAQ;AAAE,gBACtEX,KAAA,CAAAC,aAAA;EAASO,SAAS,EAAC;AAAS,gBACzBR,KAAA,CAAAC,aAAA,YAAG,gDAAiD,CAAC,eACrDD,KAAA,CAAAC,aAAA;EAAKW,GAAG,EAAC,qCAAqC;EAACF,KAAK,EAAE;IAAEG,KAAK,EAAG,OAAM;IAAEC,YAAY,EAAE;EAAG;AAAE,CAAE,CACvF,CAAC,eACVd,KAAA,CAAAC,aAAA;EAAMS,KAAK,EAAE;IAAEK,MAAM,EAAG,MAAK;IAAEC,MAAM,EAAG,gBAAe;IAAEF,YAAY,EAAG,MAAK;IAAEG,OAAO,EAAG;EAAM;AAAE,gBAC9FjB,KAAA,CAAAC,aAAA;EAAOiB,OAAO,EAAC;AAAU,GAAC,WAAgB,CAAC,eAC3ClB,KAAA,CAAAC,aAAA;EAAOQ,EAAE,EAAC;AAAU,CAAE,CACnB,CACJ,CACP;AACDU,OAAO,CAACC,GAAG,CAACb,SAAS,CAAC;AACtBL,IAAI,CAACmB,MAAM,CAACd,SAAS,CAAC;AACtB;AACA,MAAMe,MAAM,gBACTtB,KAAA,CAAAC,aAAA,aAAI,8CAC2C,EAACsB,SAAS,EAAC,GAAC,EAAC,IAAI,EAAC,GAAC,EAAC,IAAI,EAAC,GAAC,EAAC,KAAK,EAAC,GAC5E,CACN;AACD",
+   "ignoreList": []
+}
