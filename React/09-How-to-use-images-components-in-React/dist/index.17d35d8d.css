@@ -1,0 +1,24 @@
+section {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 5rem auto auto;
+  display: flex;
+}
+
+section span {
+  font-size: 1.8rem;
+}
+
+button {
+  width: 50px;
+}
+
+section button img {
+  width: 100%;
+}
+
+.basket {
+  text-align: center;
+}
+/*# sourceMappingURL=index.17d35d8d.css.map */

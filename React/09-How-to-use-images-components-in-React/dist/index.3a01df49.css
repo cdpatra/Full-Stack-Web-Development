@@ -1,0 +1,17 @@
+section {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 5rem auto auto;
+  display: flex;
+}
+
+section span {
+  font-size: 1.8rem;
+}
+
+button {
+  padding-bottom: 5px;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */
