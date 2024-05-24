@@ -1,0 +1,9 @@
+/* //! this is the CSS Module file */
+
+.button {
+   background-color: skyblue;
+}
+
+.text-xl{
+   font-size: 4rem;
+}

@@ -1,0 +1,32 @@
+section {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 5rem auto auto;
+  display: flex;
+}
+
+section span {
+  font-size: 1.8rem;
+}
+
+button {
+  width: 50px;
+}
+
+section button img {
+  width: 100%;
+}
+
+.basket {
+  text-align: center;
+}
+
+.YbLIPW_button {
+  background-color: #87ceeb;
+}
+
+.YbLIPW_text-xl {
+  font-size: 4rem;
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
