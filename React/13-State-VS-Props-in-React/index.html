@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>State VS Props in React</title>
+      <script src="index.js" defer type="module"></script>
+   </head>
+   <body style="font-family: raleway;">
+      <h1>State VS Props in React</h1>
+      <!-- ! difference between state and props -->
+      <h2>Difference between State and Props</h2>
+      <h3>State</h3>
+      <ul>
+         <li>State is a local variable of any particular component, it means state is controlled by the component</li>
+         <li>State is Mutable</li>
+      </ul>
+      <h3>Props</h3>
+      <ul>
+         <li>Props are controlled by the parent component</li>
+         <li>Props are Immutable (but in React we can change props but it is not good practice)</li>
+      </ul>
+      <h3 style="color: red">
+         But the main similarity between states and props is that whenever either of them gets changed, our component get
+         re-rendered
+      </h3>
+      <div id="root"></div>
+   </body>
+</html>
