@@ -56,9 +56,10 @@ async function addCards() {
    document.querySelector(`.loading-message`).style.display = `none`;
 
    countriesData.forEach((countryData) => {
+      console.log(typeof countryData.flags.alt);
       cardContainer.innerHTML += `
       <a class="card" href="./country.html?name=${countryData.name.official}">
-      <img src="${countryData.flags.svg}" alt=${countryData.flags.alt} />
+      <img src="${countryData.flags.svg}" alt="${countryData.flags.alt ?? ""}" />
       <div class="information">
       <h3>${countryData.name.common}</h3>
       <p><strong>Population: </strong>${countryData.population.toLocaleString(`en-IN`)}</p>
