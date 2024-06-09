@@ -1,0 +1,52 @@
+@keyframes shimmer {
+   0% {
+      opacity: 100%;
+   }
+   50% {
+      opacity: 70%;
+   }
+   100% {
+      opacity: 100%;
+   }
+}
+.shimmer-flag {
+   background-color: #cccccc;
+   height: 300px;
+   animation-name: shimmer;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+.shimmer-name {
+   background-color: #cccccc;
+   height: 4rem;
+   border-radius: 10px;
+   animation-name: shimmer;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+.shimmer p {
+   background-color: #cccccc;
+   height: 2rem;
+   min-width: 200px;
+   border-radius: 10px;
+   animation-name: shimmer;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+.shimmer #border-info a {
+   background-color: #cccccc;
+   height: 2.5rem;
+   width: 100px;
+   animation-name: shimmer;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+@media (max-width: 680px) {
+   .shimmer-flag {
+      height: 200px;
+   }
+}
