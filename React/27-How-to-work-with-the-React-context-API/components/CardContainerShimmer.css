@@ -1,0 +1,35 @@
+/* @keyframes shimmer {
+   0% {
+      background-image: linear-gradient(120deg, #ffffff, #cccccc, #cccccc, #cccccc);
+   }
+   25% {
+      background-image: linear-gradient(120deg, #cccccc, #ffffff, #cccccc, #cccccc);
+   }
+   50% {
+      background-image: linear-gradient(120deg, #cccccc, #cccccc, #ffffff, #cccccc);
+   }
+   75% {
+      background-image: linear-gradient(120deg, #cccccc, #cccccc, #cccccc, #ffffff);
+   }
+   100%{
+      background-color: #cccccc;
+   }
+} */
+@keyframes shimmer {
+   0% {
+      opacity: 100%;
+   }
+   50% {
+      opacity: 70%;
+   }
+   100% {
+      opacity: 100%;
+   }
+}
+#shimmer-card {
+   animation-name: shimmer;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   background-color: #cccccc;
+}

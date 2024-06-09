@@ -1,0 +1,485 @@
+* {
+  box-sizing: border-box;
+  font-family: Nunito Sans, sans-serif;
+}
+
+body {
+  --text-color: #111517;
+  --theme-color: #fafafa;
+  --elements-color: #fafafa;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+header.dark, .container.dark, .country-detail-container.dark, .shimmer.dark {
+  --text-color: #fff;
+  --theme-color: #202c37;
+  --elements-color: #2b3945;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+}
+
+.container {
+  color: inherit;
+  background-color: inherit;
+  min-height: inherit;
+}
+
+header.header-container {
+  z-index: 2;
+  background-color: var(--elements-color);
+  color: var(--text-color);
+  position: sticky;
+  top: -103px;
+  box-shadow: 0 1px 5px 2px #00000025;
+}
+
+.heading {
+  text-align: center;
+  color: inherit;
+  margin: 0;
+  padding-block: .5rem;
+  font-size: 4rem;
+  text-decoration-line: none;
+  display: block;
+}
+
+.header {
+  background-color: var(--elements-color);
+  color: var(--text-color);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding-inline: 4rem;
+  display: flex;
+}
+
+.header h2 {
+  margin: 0;
+  font-weight: 800;
+}
+
+#mode {
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+
+#mode i {
+  font-size: 1.5rem;
+}
+
+@keyframes rotating-sun {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+i[class="fa-solid fa-sun"] {
+  animation-name: rotating-sun;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scaling-moon {
+  0% {
+    transform: scale(1)rotate(0);
+  }
+
+  50% {
+    transform: scale(1.3)rotate(-12deg);
+  }
+
+  100% {
+    transform: scale(1)rotate(0);
+  }
+}
+
+i[class="fa-solid fa-moon"] {
+  animation-name: scaling-moon;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.loading-message {
+  font-size: 1.5rem;
+  position: fixed;
+  top: 50vh;
+  left: 43vw;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-message .fa-solid {
+  padding: .5rem;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.card-container {
+  background-color: inherit;
+  color: inherit;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  min-height: calc(100vh - 312px);
+  margin-inline: 4rem;
+  display: flex;
+}
+
+.card-container .card {
+  cursor: pointer;
+  background-color: var(--elements-color);
+  color: inherit;
+  border-radius: 5px;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  width: 250px;
+  height: 300px;
+  text-decoration-line: none;
+  transition: all .1s ease-out;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 1px 5px 2px #00000025;
+}
+
+.card-container .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 10px 4px #00000025;
+}
+
+.card-container .card img {
+  width: 100%;
+  max-height: 50%;
+}
+
+.card-container .card .information {
+  padding-inline: 1rem;
+}
+
+.card-container .card .information p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#search-filter {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 145px;
+  margin-inline: 4rem;
+  padding-block: 2rem;
+  display: flex;
+}
+
+#search {
+  color: var(--text-color);
+  background-color: var(--elements-color);
+  border-radius: 5px;
+  flex-basis: 400px;
+  align-items: center;
+  padding-inline: 1.5rem;
+  display: flex;
+  box-shadow: 0 1px 10px 4px #00000025;
+}
+
+#search input {
+  background-color: inherit;
+  color: inherit;
+  margin: 0;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+#search input::placeholder {
+  color: var(--text-color);
+}
+
+#filter p {
+  cursor: pointer;
+  background-color: var(--elements-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  gap: 2rem;
+  padding: 1rem;
+  font-size: 14px;
+  display: flex;
+  box-shadow: 0 1px 5px 2px #00000025;
+}
+
+#filter .filter-selected {
+  border: 3px solid #add8e6;
+}
+
+#filter {
+  position: relative;
+}
+
+.menus {
+  z-index: 1;
+  color: inherit;
+  background-color: #fafafa;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  box-shadow: 0 1px 5px 2px #00000025;
+}
+
+#filter .menus li {
+  cursor: pointer;
+  border-radius: 5px;
+  padding-block: .5rem;
+  padding-inline: 2rem;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+#filter .menus li:hover {
+  font-weight: 800;
+}
+
+#filter .open {
+  display: block;
+}
+
+#country-section {
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 4rem;
+  padding: 4rem;
+  display: grid;
+}
+
+#country-flag {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  grid-row-start: span 4;
+  width: 100%;
+  max-width: 550px;
+  margin-block: auto;
+}
+
+#country-name {
+  grid-column-start: span 2;
+  margin: 0;
+  font-size: 3rem;
+}
+
+#border-info {
+  flex-wrap: nowrap;
+  grid-column-start: span 2;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+#border-info p {
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+#border-countries-list {
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+}
+
+#border-countries-list a {
+  color: var(--text-color);
+  background-color: var(--elements-color);
+  padding-block: .5rem;
+  padding-inline: 1.5rem;
+  text-decoration-line: none;
+  box-shadow: 0 1px 5px 2px #00000025;
+}
+
+#back-button {
+  margin-inline: 2rem;
+  margin-bottom: 0;
+  margin-left: 4rem;
+  padding-top: 2rem;
+}
+
+#back-button span {
+  cursor: pointer;
+  background-color: var(--elements-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  padding-block: .5rem;
+  padding-inline: 2rem;
+  box-shadow: 0 1px 5px 2px #00000025;
+}
+
+#map {
+  grid-column-start: span 2;
+}
+
+#map-link a {
+  color: inherit;
+  margin-inline: .5rem;
+}
+
+@media (width <= 680px) {
+  .card-container {
+    flex-direction: column;
+    margin-inline: 2rem;
+  }
+
+  header.header-container {
+    top: -65px;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .header {
+    padding-inline: 2rem;
+    font-size: .75rem;
+  }
+
+  #search-filter {
+    margin-inline: 2rem;
+  }
+
+  #back-button {
+    margin-inline: 2rem;
+    padding-block: 2rem;
+  }
+
+  #country-section {
+    padding: 2rem;
+  }
+}
+
+@media (width <= 1100px) {
+  #country-section {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #country-flag {
+    grid-row: 1 / 2;
+  }
+
+  #country-name {
+    grid-column-start: 1;
+    font-size: 2rem;
+  }
+
+  #border-info {
+    flex-direction: column;
+    grid-column-start: 1;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  #map {
+    grid-column-start: 1;
+  }
+}
+
+@media (width <= 435px) {
+  .loading-message {
+    font-size: .8rem;
+    left: 40vw;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#shimmer-card {
+  background-color: #ccc;
+  animation-name: shimmer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.shimmer-flag {
+  background-color: #ccc;
+  height: 300px;
+  animation-name: shimmer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.shimmer-name {
+  background-color: #ccc;
+  border-radius: 10px;
+  height: 4rem;
+  animation-name: shimmer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.shimmer p {
+  background-color: #ccc;
+  border-radius: 10px;
+  min-width: 200px;
+  height: 2rem;
+  animation-name: shimmer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.shimmer #border-info a {
+  background-color: #ccc;
+  width: 100px;
+  height: 2.5rem;
+  animation-name: shimmer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@media (width <= 680px) {
+  .shimmer-flag {
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
