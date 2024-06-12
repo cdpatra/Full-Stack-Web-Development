@@ -20,6 +20,7 @@ export default function CardContainer({ query }) {
    // & useEffect() hook is mainly used to monitor the state
    // ! useState() hook is used to create state, and useEffect() hook is used to monitor the state.
    // * if we return any function in the callback function of useEffect() hook, then it is called as cleanup function, this cleanup function is called when our component gets unmounted (unmounting happens automatically when we use routing in our web page).
+   // & useEffect() runs after the re-rendering of the component 
 
    // ! <| Let's try fetch the data using useEffect() hook |>
    useEffect(() => {
